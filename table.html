@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tabla Estilizada</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+  <style>
+    html {
+      font-size: 62.5%;
+      /* = 10px */
+      font-family: "Didact Gothic", sans-serif;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      color: #332F2C;
+    }
+
+    th {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      text-align: center;
+      font-size: large;
+      color: #181E4B;
+    }
+
+    td {
+      border: 1px solid #ddd;
+      border-bottom: solid 1px #5ACCA4;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+
+    }
+
+    tr:hover {
+      background-color: #ddd;
+
+    }
+
+    .my-button {
+      background-color: #6B5CFF;
+      border: none;
+      color: #f2f2f2;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 1.5rem;
+      margin: 4px 2px;
+      width: 50%;
+      cursor: pointer;
+      border-radius: 4px;
+      box-shadow: 0 1.5px 2.5px 0 #181E4B;
+      transition: 0.2s;
+      font-family: "Didact Gothic", sans-serif;
+    }
+
+    .my-button:hover {
+      background-color: #181E4B;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th style="background-color: #E6CA52;">Resource</th>
+        <th style="background-color: #EAA2FC;">Description</th>
+        <th style="background-color: #FE654F;">Link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Website</td>
+        <td>English Passive voice</td>
+        <td><a href="https://www.grammar-monster.com/glossary/passive_voice.htm"><button class="my-button">Passive
+              Voice</button></a></td>
+      </tr>
+      <tr>
+        <td>Website</td>
+        <td>Passive voice - Exercise</td>
+        <td><a href="https://www.english-4u.de/en/grammar-exercises/passive5.htm"><button class="my-button">Passive
+              Voice - English Exercise</button></a></td>
+      </tr>
+      <tr>
+        <td>Slides</td>
+        <td>Discussion activity</td>
+        <td><a
+            href="https://view.genial.ly/6590bd70265a6900148b2f5d/interactive-content-discussion-cell-phone-addiction"><button
+              class="my-button">Discussion: Cell phone addiction</button></a></td>
+        </td>
+      </tr>
+      <tr>
+        <td>Video</td>
+        <td>Passive voice - PapaEnglish</td>
+        <td><a href="https://www.youtube.com/watch?v=UFpUcq3k-vI"><button class="my-button">English Grammar - The
+              Passive Voice</button></a></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
